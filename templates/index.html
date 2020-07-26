@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='style.css')}}"
+    />
+    <title>ParkRight | #1 parking assistant</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{url_for('static',
+    filename='img/skylt.png')}}"
+    />
+  </head>
+
+  <body>
+    <div id="controllers">
+      <button id="snap">Snap</button>
+      <button id="clear">Clear</button>
+      <select name="camera-select" id="camera-select"> </select>
+      <button id="send">Send</button>
+    </div>
+
+    <h1>Hejhej</h1>
+
+    <video autoplay playsinline></video>
+    <div id="output">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>
