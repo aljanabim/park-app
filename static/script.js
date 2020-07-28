@@ -94,7 +94,6 @@ const snapPicture = () => {
   const context = canvas.getContext("2d");
   canvas.width = 120;
   canvas.height = 120;
-  console.log(video.width);
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
   const imgData = canvas.toDataURL("image/png");
   return imgData;
