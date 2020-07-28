@@ -34,4 +34,5 @@ def corner_detection(filename):
 
 if __name__ == "__main__":
     img_file = './signs/VM-E20-1_960x960.png'
-    corner_detectione(img_file)
+    img_file = './signs/real/01.jpg'
+    corner_detection(img_file)
