@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 
 def edge_detection(filename):
-    img = cv2.imread()
+    img = cv2.imread(filename)
     edges = cv2.Canny(img, 100, 200)
     plt.subplot(121), plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
     plt.title('Original Image'), plt.xticks([]), plt.yticks([])
@@ -35,4 +35,4 @@ def corner_detection(filename):
 if __name__ == "__main__":
     img_file = './signs/VM-E20-1_960x960.png'
     img_file = './signs/real/01.jpg'
-    corner_detection(img_file)
+    edge_detection(img_file)
